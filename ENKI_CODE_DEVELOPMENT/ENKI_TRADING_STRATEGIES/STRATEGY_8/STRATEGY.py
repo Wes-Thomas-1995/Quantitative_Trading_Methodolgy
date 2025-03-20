@@ -1,22 +1,23 @@
 
 
-class STRATEGY():
-    def __init__(self, DATA_DF):
-        self.DATA_DF    = DATA_DF
-        self.DF         = self.STRATEGY()
+############  AI  ############
 
-    def STRATEGY(self):
-        TAKE_PROFIT = 0.01  # Take Profit set to 1%
-        STOP_LOSS   = 0.02  # Stop Loss set to 2%
-        
-        self.DATA_DF['SIGNAL'] = 'STATIC'
-        self.DATA_DF['SIGNAL']          =   np.where((self.DATA_DF['EMA_18'].shift(1) <= self.DATA_DF['EMA_24'].shift(1)) & 
-                                                    (self.DATA_DF['EMA_18'] > self.DATA_DF['EMA_24']), "LONG",  
-                                            np.where((self.DATA_DF['EMA_18'].shift(1) >= self.DATA_DF['EMA_24'].shift(1)) & 
-                                                    (self.DATA_DF['EMA_18'] < self.DATA_DF['EMA_24']), "SHORT",
-                                                    "STATIC"))
 
-        self.DATA_DF['TP']              = np.where((self.DATA_DF['SIGNAL'] == 'LONG'), (self.DATA_DF['OPEN'] * (1 + TAKE_PROFIT)), np.where((self.DATA_DF['SIGNAL'] == 'SHORT'), self.DATA_DF['OPEN'] * (1 - TAKE_PROFIT), 0))
-        self.DATA_DF['SL']              = np.where((self.DATA_DF['SIGNAL'] == 'LONG'), (self.DATA_DF['OPEN'] * (1 - STOP_LOSS)), np.where((self.DATA_DF['SIGNAL'] == 'SHORT'), self.DATA_DF['OPEN'] * (1 + STOP_LOSS), 0))
+#FILE	                                    STRATEGY	                        TP_SL	                END_BALANCE__1	END_BALANCE__2	END_BALANCE__3
+#BTCUSDT -- 1D -- amazon/chronos-t5-small	1  --  4  --  STOCH_10	            TP_AI_1  --  SL_ATR_1	111,3201.9	    1.25	            1,361,874.11
 
-        return self.DATA_DF
+
+
+
+class CONDITIONS():
+    def __init__(self):
+        self.DF         = self.CONDITIONS()
+
+    def CONDITIONS(self):
+        return ['XRPUSDT', '1D', 'SMALL', [1,  4,  'STOCH_40'],                ['TP_AI_1',  'SL_ATR_1'], 1]
+
+
+
+    #INPUT_PARAMS                = ['BTCUSDT', '1D', 'SMALL', [1,  4,  'STOCH_10'],                ['TP_AI_1',  'SL_ATR_1'], 2]
+    #INPUT_PARAMS                = ['ADAUSDT', '1D', 'LARGE', [0.75,  3,  'AVG_VOL_P_GAIN_3_2'],   ['TP_AI_2',  'SL_ATR_2'], 1]
+    #INPUT_PARAMS                = 

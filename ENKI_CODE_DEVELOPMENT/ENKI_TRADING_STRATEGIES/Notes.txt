@@ -1,0 +1,99 @@
+
+
+
+STRATEGIES TO BE EMPLOYED FOLLOWING TESTING SERIES:
+
+
+
+
+
+FILE	        STRATEGY	        TP_SL	        END_BALANCE__1 
+AVAXUSDT -- 4H	STRATEGY_NBR_4	    34	            97,732 
+DOGEUSDT -- 4H	STRATEGY_NBR_40	    30	            1,387,651,315 
+DOGEUSDT -- 4H	STRATEGY_NBR_38	    30	            1,038,485,750 
+ADAUSDT -- 4H	STRATEGY_NBR_40	    30	            107,350,457 
+ETHUSDT -- 4H	STRATEGY_NBR_2405	18	            1,237,929 
+XRPUSDT -- 4H	STRATEGY_NBR_3544	36	            706,259 
+BTCUSDT -- 4H	STRATEGY_NBR_3544	29	            506,599 
+BTCUSDT -- 4H	STRATEGY_NBR_3544	RL_STD_12_2	    341,344 
+DOGEUSDT -- 4H	STRATEGY_NBR_4118	35	            6,338 
+ADAUSDT -- 4H	STRATEGY_NBR_197	28	            2,876 
+BTCUSDT -- 4H	STRATEGY_NBR_149	27	            1,187 
+
+
+
+FILE	        STRATEGY	        TP_SL	        END_BALANCE__1 
+ADAUSDT -- 1D	STRATEGY_NBR_4028	1	            157,272 
+XRPUSDT -- 1D	STRATEGY_NBR_3555	RL_STD_13_0	    5,610 
+AVAXUSDT -- 1D	STRATEGY_NBR_3572	RL_STD_14_0	    134,231 
+
+
+
+
+
+FILE	                                    STRATEGY	                        TP_SL	                END_BALANCE__1	END_BALANCE__2	END_BALANCE__3
+XRPUSDT -- 4H -- amazon/chronos-t5-small	1  --  5  --  STOCH_40	            TP_AI_2  --  SL_ATR_2	181.85	        36,148.37	        313.47
+XRPUSDT -- 4H -- amazon/chronos-t5-large	0.75  --  4  --  ROC_1	            TP_AI_2  --  SL_ATR_2	186.29	        16,972.36	        72.13
+XRPUSDT -- 4H -- amazon/chronos-t5-small	0.5  --  5  --  STOCH_40	        TP_AI_2  --  SL_ATR_2	198.27	        9,382.13	        269.05
+DOGEUSDT -- 4H -- amazon/chronos-t5-small	0.5  --  4  --  AVG_VOL_P_GAIN_2_1	TP_AI_2  --  SL_ATR_2	106.44	        6,030.24	        73.09
+ADAUSDT -- 4H -- amazon/chronos-t5-small	1  --  5  --  ROC_3	                TP_AI_2  --  SL_ATR_2	747.96	        0	                345.61
+ADAUSDT -- 4H -- amazon/chronos-t5-small	1  --  3  --  ROC_3	                TP_AI_2  --  SL_ATR_2	340.08	        0	                416.36
+BTCUSDT -- 1D -- amazon/chronos-t5-small	1  --  4  --  STOCH_10	            TP_AI_1  --  SL_ATR_1	111,3201.9	    1.25	            1,361,874.11
+XRPUSDT -- 1D -- amazon/chronos-t5-small	1  --  3  --  STOCH_40	            TP_AI_1  --  SL_ATR_1	103.61	        22,240.09	        118.06
+XRPUSDT -- 1D -- amazon/chronos-t5-large	0.75  --  10  --  STOCH_40	        TP_AI_1  --  SL_ATR_1	168.86	        9,972.91	        183.04
+XRPUSDT -- 1D -- amazon/chronos-t5-small	1  --  10  --  STOCH_40	            TP_AI_1  --  SL_ATR_1	66.22	        19,593.83	        119.92
+ADAUSDT -- 1D -- amazon/chronos-t5-large	0.75  --  3  --  AVG_VOL_P_GAIN_3_2	TP_AI_2  --  SL_ATR_2	112.95	        23,017.27	        106.22
+ADAUSDT -- 1D -- amazon/chronos-t5-small	0.5  --  10  --  ROC_3	            TP_AI_1  --  SL_ATR_1	186.49	        20,431.75	        166.61
+XRPUSDT -- 1D -- amazon/chronos-t5-small	1  --  3  --  AVG_VOL_P_GAIN_3_2	TP_AI_1  --  SL_AI_1	458.76	        6,143.56	        327.59
+XRPUSDT -- 1D -- amazon/chronos-t5-small	1  --  4  --  AVG_VOL_P_GAIN_3_2	TP_AI_1  --  SL_ATR_1	251.56	        3,892.85	        167.81
+XRPUSDT -- 1D -- amazon/chronos-t5-small	0.5  --  10  --  ROC_3	            TP_AI_2  --  SL_ATR_2	318.4	        2,260.71	        282.34
+XRPUSDT -- 1D -- amazon/chronos-t5-small	0.5  --  3  --  AVG_VOL_P_GAIN_3_2	TP_AI_1  --  SL_AI_1	366.53	        811.74	            203.78
+ADAUSDT -- 4H -- amazon/chronos-t5-large	1  --  3  --  AVG_VOL_P_GAIN_2_2	TP_AI_1  --  SL_ATR_1	77.42	        913.59	            189.15	
+ADAUSDT -- 4H -- amazon/chronos-t5-large	1  --  4  --  AVG_VOL_P_GAIN_2_2	TP_AI_1  --  SL_AI_1	31.08	        879.02	            47.83	
+
+
+
+
+
+
+FINAL SELECTION:
+
+
+FILE	        STRATEGY	        TP_SL	        END_BALANCE__1 
+AVAXUSDT -- 4H	STRATEGY_NBR_4	    34	            97,732 
+ADAUSDT -- 4H	STRATEGY_NBR_40	    30	            107,350,457 
+ADAUSDT -- 1D	STRATEGY_NBR_4028	1	            157,272 
+ETHUSDT -- 4H	STRATEGY_NBR_2405	18	            1,237,929 
+XRPUSDT -- 4H	STRATEGY_NBR_3544	36	            706,259 
+BTCUSDT -- 4H	STRATEGY_NBR_3544	29	            506,599 
+BTCUSDT -- 4H	STRATEGY_NBR_3544	RL_STD_12_2	    341,344 
+
+
+FILE	                                    STRATEGY	                        TP_SL	                END_BALANCE__1	END_BALANCE__2	END_BALANCE__3
+BTCUSDT -- 1D -- amazon/chronos-t5-small	1  --  4  --  STOCH_10	            TP_AI_1  --  SL_ATR_1	111,3201.9	    1.25	            1,361,874.11
+ADAUSDT -- 1D -- amazon/chronos-t5-large	0.75  --  3  --  AVG_VOL_P_GAIN_3_2	TP_AI_2  --  SL_ATR_2	112.95	        23,017.27	        106.22
+XRPUSDT -- 1D -- amazon/chronos-t5-small	1  --  3  --  STOCH_40	            TP_AI_1  --  SL_ATR_1	103.61	        22,240.09	        118.06
+
+
+
+
+
+
+PERSONAL TRADING:
+
+FILE	        STRATEGY	        TP_SL
+DOGEUSDT -- 1D	STRATEGY_NBR_309	24
+DOGEUSDT -- 1D	STRATEGY_NBR_344	12
+ETHUSDT -- 1D	STRATEGY_NBR_5504	23
+BTCUSDT -- 1D	STRATEGY_NBR_2584	RL_STD_13_1
+XRPUSDT -- 1D	STRATEGY_NBR_3845	6
+XRPUSDT -- 1D	STRATEGY_NBR_640	6
+
+
+
+Large AI model based on last 100 data points on both next trade highs and lows but also the next 10.
+do this on both 4H and 1D.
+
+
+
+
